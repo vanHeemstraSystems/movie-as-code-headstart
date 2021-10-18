@@ -56,6 +56,40 @@ PROXY_PORT=8080
 ```
 sample.env
 
+Inside the app directory create a ***sample.docker-compose.yml*** file.
+
+```
+$ cd app
+$ touch sample.docker-compose.yml
+```
+
+With the sample.docker-compose.yml file created, add the following content to it:
+
+```
+version: "3.7"
+
+# See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
+services:
+
+  webui:
+    build:
+      context: ./webui
+      args: # from env_file
+        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
+        PROXY_USER: ${PROXY_USER}
+        PROXY_PASSWORD: ${PROXY_PASSWORD}
+        PROXY_FQDN: ${PROXY_FQDN}
+        PROXY_PORT: ${PROXY_PORT}
+    env_file:
+      - .env
+    ports:
+    - "80:80"
+```
+sample.docker-compose.yml
+
+
+
+
 ## 300 - Generate a new app
 
 ```
