@@ -1,6 +1,6 @@
 # 200 - HyperText Markup Language (HTML)
 
-''''
+````
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,4 +82,4 @@
 	</script>
 </body>
 </html>
-''''
+````
