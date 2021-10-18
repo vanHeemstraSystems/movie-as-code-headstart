@@ -3,7 +3,15 @@ movie-as-code-headstart
 
 Based on "Timeline Animations using Anime js | How to make Animated Website" at https://www.youtube.com/watch?v=p6vIxQA_bgs
 
+Source Code: https://www.patreon.com/posts/source-code-js-51510912
+
+Google Drive: https://drive.google.com/drive/folders/1U1ynZxlK7NAnpeAIlW9vHnzNzJ9riR6E?usp=sharing
+
 Based on "Parallax Scrolling Website | How to Make Website using Html CSS & Javascript" at https://www.youtube.com/watch?v=1wfeqDyMUx4
+
+Source Code: https://www.patreon.com/posts/source-code-how-50090458
+
+Google Drive: https://drive.google.com/drive/folders/1d9_oLti2nQ0NS2ShnKZbgk50UEBfQZdT?usp=sharing
 
 Resources:
 
