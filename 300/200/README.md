@@ -42,3 +42,28 @@ COPY . ./
 CMD ["npm", "start"]
 ```
 containers/app/webui/Dockerfile
+
+
+NOTE: Silencing the NPM output, via --silent, is a personal choice. It’s often frowned upon, though, since it can swallow errors. Keep this in mind so you don’t waste time debugging.
+
+Add a ***.dockerignore*** file in the same directory.
+
+```
+$ cd containers/app/webui
+$ touch .dockerignore
+```
+
+Add the following content to the .dockerignore file
+
+```
+node_modules
+build
+.dockerignore
+Dockerfile
+Dockerfile.prod
+```
+containers/app/webui/.dockerignore
+
+NOTE: This will speed up the Docker build process as our local dependencies inside the “node_modules” directory will not be sent to the Docker daemon.
+
+== WE ARE HERE ==
