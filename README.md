@@ -28,7 +28,7 @@ So in case of Movie-as-Code (MaC):
 
 We will base our first movie (shot) on the tutorial "[Timeline Animations using Anime js](https://www.youtube.com/watch?v=p6vIxQA_bgs)" by 'Online Tutorials', shown below:
 
-![mountains-cleft-view-from-bottom-night-scenery-landscape-with-high-rocks-full-moon-with-stars-glowing-peaks_107791-5585](https://user-images.githubusercontent.com/12828104/137686608-ed9e81ba-ae44-48aa-a27c-d3cfb5ec8578.jpg)
+![15Z_2102 w026 n002 163B p1 163](https://user-images.githubusercontent.com/12828104/137687212-e772fd31-5d9b-4b8f-893c-a46aa2249134.jpg)
 
 <a href='https://www.freepik.com/vectors/star'>Star vector created by upklyak - www.freepik.com</a>
 
