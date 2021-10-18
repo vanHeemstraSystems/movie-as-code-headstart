@@ -1,4 +1,4 @@
-# 200 - Getting Started
+# 200 - Original Resources
 
 We will base our first movie (shot) on the tutorial "[Timeline Animations using Anime js](https://www.youtube.com/watch?v=p6vIxQA_bgs)" by 'Online Tutorials', shown below:
 
