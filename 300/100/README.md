@@ -36,7 +36,25 @@ Add an ***app*** directory from within the containers directory.
 ```
 $ cd containers
 $ mkdir app
-``
+```
+
+Inside the app directory create a ***sample environment*** file.
+
+```
+$ cd app
+$ touch sample.env
+```
+
+With the sample.env file created, add the following content to it:
+
+```
+IMAGE_REPOSITORY=docker.io
+PROXY_USER=my-proxy-user
+PROXY_PASSWORD=my-proxy-password
+PROXY_FQDN=my-proxy.my-company.com
+PROXY_PORT=8080
+```
+sample.env
 
 ## 300 - Generate a new app
 
