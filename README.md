@@ -13,6 +13,8 @@ Source Code: https://www.patreon.com/posts/source-code-how-50090458
 
 Google Drive: https://drive.google.com/drive/folders/1d9_oLti2nQ0NS2ShnKZbgk50UEBfQZdT?usp=sharing
 
+Based on "Dockerizing a React App" at https://mherman.org/blog/dockerizing-a-react-app/
+
 Resources:
 
 - Images: https://www.freepik.com/free-vector/mountains-cleft-view-from-bottom-night-scenery-landscape-with-high-rocks-full-moon-with-stars-glowing-peaks_13194970.htm
