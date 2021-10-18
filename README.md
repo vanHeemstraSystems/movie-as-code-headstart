@@ -3,6 +3,8 @@ movie-as-code-headstart
 
 Based on "Timeline Animations using Anime js | How to make Animated Website" at https://www.youtube.com/watch?v=p6vIxQA_bgs
 
+Based on "Parallax Scrolling Website | How to Make Website using Html CSS & Javascript" at https://www.youtube.com/watch?v=1wfeqDyMUx4
+
 Resources:
 
 - Images: https://www.freepik.com/free-vector/mountains-cleft-view-from-bottom-night-scenery-landscape-with-high-rocks-full-moon-with-stars-glowing-peaks_13194970.htm
