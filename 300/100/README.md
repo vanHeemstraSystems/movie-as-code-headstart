@@ -97,3 +97,41 @@ $ npm init react-app webui --use-npm
 $ cd webui
 ```
 
+You will be prompted as follows:
+
+```
+found 27 vulnerabilities (8 moderate, 18 high, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Success! Created webui at /Users/willemvanheemstra/git/movie-as-code-headstart/containers/app/webui
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd webui
+  npm start
+
+Happy hacking!
+```
+
+Take care of the reported vulnerabilities by running the following command from within the webui directory.
+
+```
+$ cd webui
+$ npm audit fix
+```
+
+
