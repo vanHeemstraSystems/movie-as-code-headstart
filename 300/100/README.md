@@ -25,6 +25,19 @@ node_modules
 ```
 .gitignore
 
+Add a ***containers*** directory from the root of the project.
+
+```
+$ mkdir containers
+```
+
+Add an ***app*** directory from within the containers directory.
+
+```
+$ cd containers
+$ mkdir app
+``
+
 ## 300 - Generate a new app
 
 ```
