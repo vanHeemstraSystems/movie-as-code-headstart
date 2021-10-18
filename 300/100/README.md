@@ -87,12 +87,13 @@ services:
 ```
 sample.docker-compose.yml
 
-
-
-
 ## 300 - Generate a new app
 
+Inside the subdirectory /containers/app/ created a new app called '***webui***':
+
 ```
-$ npm init react-app sample --use-npm
-$ cd sample
+$ cd containers/app
+$ npm init react-app webui --use-npm
+$ cd webui
 ```
+
