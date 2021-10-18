@@ -16,7 +16,7 @@ Make a .gitignore file in the root of the project:
 $ touch .gitignore
 ```
 
-Add the following content to the newly created .gitginore file:
+Add the following content to the newly created .gitignore file:
 
 ```
 node_modules
