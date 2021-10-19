@@ -18,6 +18,5 @@ services:
     volumes:
       - ./webui:/app
       - /app/node_modules
-      - /app/package.json
     environment:
       - CHOKIDAR_USEPOLLING=true
