@@ -113,4 +113,11 @@ $ cd containers/app
 $ docker-compose up --build -d
 ```
 
+If successful, you can browse to the start page of the new React App, which will look like below:
+
+![Screenshot 2021-10-19 at 13 07 46](https://user-images.githubusercontent.com/1499433/137897955-908a2483-66c2-4ab8-a22a-a8a06ca6b325.png)
+
+
+
+
 == WE ARE HERE ==
