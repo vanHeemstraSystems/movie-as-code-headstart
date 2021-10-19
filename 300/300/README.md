@@ -1,6 +1,31 @@
 # 300 - Docker for Production Environment
 
-Let's create a separate Dockerfile for use in production called ***Dockerfile.prod***:
+Let's create a separate docker-compose file in production called ***sample.docker-compose.prod.yml***.
+
+```
+version: "3.7"
+
+# See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
+services:
+  webui:
+    build:
+      context: ./web
+      dockerfile: Dockerfile.prod
+    container_name: app-prod  
+    ports:
+      - "80:1337"
+```
+containers/app/sample.docker-compose.prod.yml
+
+***Notice*** the difference in port number (dev: 8080, prod: 80) and overall size of the docker-compose files (dev: long, prod: short) between ***dev*** and ***prod***.
+
+Copy the sample.docker-compose.prod.yml:
+
+```
+$ cp sample.docker-compose.prod.yml docker-compose.prod.yml
+```
+
+Let's also create a separate Dockerfile for use in production called ***Dockerfile.prod***:
 
 ```
 ARG IMAGE_REPOSITORY
