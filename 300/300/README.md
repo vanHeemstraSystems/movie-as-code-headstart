@@ -21,7 +21,7 @@ services:
       - .env      
     container_name: app-prod  
     ports:
-      - "80:1337"
+      - "80:80"
 ```
 containers/app/sample.docker-compose.prod.yml
 
@@ -91,6 +91,8 @@ Using the production docker-compose file, build and tag the Docker image and run
 $ cd containers/app
 $ docker-compose --file docker-compose.prod.yml up --build -d
 ```
+
+If successful, browse to http://localhost (***note***: 80 is the default port for HTTP, and therefore not required to be added to the hostname) to see the production version of the app.
 
 
 
