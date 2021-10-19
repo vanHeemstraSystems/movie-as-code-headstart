@@ -43,6 +43,7 @@ CMD ["npm", "start"]
 ```
 containers/app/webui/Dockerfile
 
+If you run into an "ENOENT: no such file or directory, open '/app/package.json". error, you may need to add an additional volume: -v /app/package.json.
 
 NOTE: Silencing the NPM output, via --silent, is a personal choice. It’s often frowned upon, though, since it can swallow errors. Keep this in mind so you don’t waste time debugging.
 
@@ -119,7 +120,17 @@ If successful, you can browse to the start page of the new React App, which will
 
 http://localhost
 
+What’s happening here?
 
+1. The ***docker-compose*** command creates and runs a new container instance from the image we just created.
+
+2. -v ./webui:/app mounts the code into the container at “/app”.
+
+3. Since we want to use the container version of the “node_modules” folder, we configured another volume: -v /app/node_modules. You should now be able to remove the local “node_modules” flavor.
+
+4. -p 80:3000 exposes port 3000 to other Docker containers on the same network (for inter-container communication) and port 80 to the host.
+
+5. Finally, environment: - CHOKIDAR_USEPOLLING=true enables a polling mechanism via chokidar (which wraps fs.watch, fs.watchFile, and fsevents) so that hot-reloading will work.
 
 
 == WE ARE HERE ==
