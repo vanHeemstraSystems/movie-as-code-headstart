@@ -4,7 +4,7 @@ version: "3.7"
 services:
   webui:
     build:
-      context: ./web
+      context: ./webui
       dockerfile: Dockerfile.prod
     container_name: app-prod  
     ports:
