@@ -146,7 +146,3 @@ Bring down the container before moving on:
 ```
 $ docker-compose stop
 ```
-
-
-
-== WE ARE HERE ==
