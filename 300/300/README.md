@@ -11,6 +11,14 @@ services:
     build:
       context: ./web
       dockerfile: Dockerfile.prod
+      args: # from env_file
+        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
+        PROXY_USER: ${PROXY_USER}
+        PROXY_PASSWORD: ${PROXY_PASSWORD}
+        PROXY_FQDN: ${PROXY_FQDN}
+        PROXY_PORT: ${PROXY_PORT}
+    env_file:
+      - .env      
     container_name: app-prod  
     ports:
       - "80:1337"
