@@ -1,13 +1,13 @@
 # 200 - Docker for Development Environment
 
-Add a ***Dockerfile*** to the containers/app/webui subdirectory:
+Add a ***Dockerfile.dev*** to the containers/app/webui subdirectory:
 
 ```
 $ cd containers/app/webui
-$ touch Dockerfile
+$ touch Dockerfile.dev
 ```
 
-Add the following content to the Dockerfile:
+Add the following content to the Dockerfile.dev:
 
 ```
 ARG IMAGE_REPOSITORY
@@ -41,7 +41,7 @@ COPY . ./
 # start app
 CMD ["npm", "start"]
 ```
-containers/app/webui/Dockerfile
+containers/app/webui/Dockerfile.dev
 
 If you run into an "ENOENT: no such file or directory, open '/app/package.json". error, you may need to add an additional volume: -v /app/package.json.
 
@@ -60,7 +60,7 @@ Add the following content to the .dockerignore file
 node_modules
 build
 .dockerignore
-Dockerfile
+Dockerfile.dev
 Dockerfile.prod
 ```
 containers/app/webui/.dockerignore
@@ -72,7 +72,7 @@ Copy sample files:
 ```
 $ cd containers/app
 $ cp sample.env .env
-$ cp sample.docker-compose.yml docker-compose.yml
+$ cp sample.docker-compose.dev.yml docker-compose.dev.yml
 ```
 
 Make sure Docker Engine is installed:
@@ -94,7 +94,7 @@ sudo systemctl start docker
 sudo service docker start
 ```
 
-NOTE: If you are ***not*** behind a proxy, comment out these entries in the Dockerfile:
+NOTE: If you are ***not*** behind a proxy, comment out these entries in the Dockerfile.dev:
 
 ```
 # See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
@@ -111,7 +111,7 @@ Build and tag the Docker image:
 
 ```
 $ cd containers/app
-$ docker-compose up --build -d
+$ docker-compose --file docker-compose.dev.yml up --build -d
 ```
 
 If successful, you can browse to the start page of the new React App, which will look like below:
@@ -144,5 +144,5 @@ Test hot-relaoding by making a change to containers/app/webui/src/App.js and wat
 Bring down the container before moving on:
 
 ```
-$ docker-compose stop
+$ docker-compose --file docker-compose.dev.yml stop
 ```
