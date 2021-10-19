@@ -5,6 +5,8 @@ services:
   webui:
     build:
       context: ./webui
+      container_name: app-dev
+      dockerfile: Dockerfile.dev
       args: # from env_file
         IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
         PROXY_USER: ${PROXY_USER}
