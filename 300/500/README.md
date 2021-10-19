@@ -4,6 +4,6 @@ Following from previous sections we now have an app both for development as well
 
 Next, we will redesign the React App to become more like a movie shot, as depicted here:
 
-
+https://user-images.githubusercontent.com/12828104/137687212-e772fd31-5d9b-4b8f-893c-a46aa2249134.jpg
 
 TO DO ... more to follow
