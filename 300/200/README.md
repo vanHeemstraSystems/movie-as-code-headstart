@@ -93,6 +93,19 @@ sudo systemctl start docker
 sudo service docker start
 ```
 
+NOTE: If you are ***not*** behind a proxy, comment out these entries in the Dockerfile:
+
+```
+# See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
+# ARG PROXY_USER
+# ARG PROXY_PASSWORD
+# ARG PROXY_FQDN
+# ARG PROXY_PORT
+
+# ENV HTTP_PROXY="http://${PROXY_USER}:${PROXY_PASSWORD}@${PROXY_FQDN}:${PROXY_PORT}"
+# ENV HTTPS_PROXY="http://${PROXY_USER}:${PROXY_PASSWORD}@${PROXY_FQDN}:${PROXY_PORT}"
+```
+
 Build and tag the Docker image:
 
 ```
