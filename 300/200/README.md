@@ -74,6 +74,24 @@ $ cp sample.env .env
 $ cp sample.docker-compose.yml docker-compose.yml
 ```
 
+Make sure Docker Engine is installed:
+
+```
+$ docker version
+```
+
+Make sure docker-compose is installed:
+
+```
+$ docker-compose version
+```
+
+Make sure Docker daemon is up and running:
+
+```
+???
+```
+
 Build and tag the Docker image:
 
 ```
