@@ -118,7 +118,7 @@ If successful, you can browse to the start page of the new React App, which will
 
 ![Screenshot 2021-10-19 at 13 07 46](https://user-images.githubusercontent.com/1499433/137897955-908a2483-66c2-4ab8-a22a-a8a06ca6b325.png)
 
-http://localhost
+http://localhost:8080
 
 What’s happening here?
 
@@ -128,7 +128,7 @@ What’s happening here?
 
 3. Since we want to use the container version of the “node_modules” folder, we configured another volume: -v /app/node_modules. You should now be able to remove the local “node_modules” flavor.
 
-4. -p 80:3000 exposes port 3000 to other Docker containers on the same network (for inter-container communication) and port 80 to the host.
+4. -p 8080:3000 exposes port 3000 to other Docker containers on the same network (for inter-container communication) and port 8080 to the host.
 
 5. Finally, environment: - CHOKIDAR_USEPOLLING=true enables a polling mechanism via chokidar (which wraps fs.watch, fs.watchFile, and fsevents) so that hot-reloading will work.
 
