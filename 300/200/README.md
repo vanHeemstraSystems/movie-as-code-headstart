@@ -107,6 +107,13 @@ NOTE: If you are ***not*** behind a proxy, comment out these entries in the Dock
 # ENV HTTPS_PROXY="http://${PROXY_USER}:${PROXY_PASSWORD}@${PROXY_FQDN}:${PROXY_PORT}"
 ```
 
+Get a recent version of docker-compose:
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
 Build and tag the Docker image:
 
 ```
