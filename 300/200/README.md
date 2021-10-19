@@ -66,4 +66,11 @@ containers/app/webui/.dockerignore
 
 NOTE: This will speed up the Docker build process as our local dependencies inside the “node_modules” directory will not be sent to the Docker daemon.
 
+Build and tag the Docker image:
+
+```
+$ cd containers/app
+$ docker-compose up --build
+```
+
 == WE ARE HERE ==
