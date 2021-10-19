@@ -66,6 +66,14 @@ containers/app/webui/.dockerignore
 
 NOTE: This will speed up the Docker build process as our local dependencies inside the “node_modules” directory will not be sent to the Docker daemon.
 
+Copy sample files:
+
+```
+$ cd containers/app
+$ cp sample.env .env
+$ cp sample.docker-compose.yml docker-compose.yml
+```
+
 Build and tag the Docker image:
 
 ```
