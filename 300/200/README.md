@@ -97,7 +97,7 @@ Build and tag the Docker image:
 
 ```
 $ cd containers/app
-$ docker-compose up --build
+$ docker-compose up --build -d
 ```
 
 == WE ARE HERE ==
