@@ -16,4 +16,4 @@ services:
       - .env
     container_name: app-prod  
     ports:
-      - "80:1337"
+      - "80:80"
