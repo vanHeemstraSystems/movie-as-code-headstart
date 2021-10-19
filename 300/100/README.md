@@ -75,7 +75,6 @@ services:
   webui:
     build:
       context: ./webui
-      container-name: app-dev
       dockerfile: Dockerfile.dev
       args: # from env_file
         IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
@@ -85,6 +84,7 @@ services:
         PROXY_PORT: ${PROXY_PORT}
     env_file:
       - .env
+    container-name: app-dev  
     ports:
       - "8080:3000"
     volumes:
