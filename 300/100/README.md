@@ -20,7 +20,8 @@ Add the following content to the newly created .gitignore file:
 
 ```
 node_modules
-/containers/app/docker-compose.yml
+/containers/app/docker-compose.dev.yml
+/containers/app/docker-compose.prod.yml
 /containers/app/.env
 ```
 .gitignore
@@ -56,14 +57,14 @@ PROXY_PORT=8080
 ```
 sample.env
 
-Inside the app directory create a ***sample.docker-compose.yml*** file.
+Inside the app directory create a ***sample.docker-compose.dev.yml*** file.
 
 ```
 $ cd app
-$ touch sample.docker-compose.yml
+$ touch sample.docker-compose.dev.yml
 ```
 
-With the sample.docker-compose.yml file created, add the following content to it:
+With the sample.docker-compose.dev.yml file created, add the following content to it:
 
 ```
 version: "3.7"
@@ -74,6 +75,8 @@ services:
   webui:
     build:
       context: ./webui
+      container-name: app-dev
+      dockerfile: Dockerfile.dev
       args: # from env_file
         IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
         PROXY_USER: ${PROXY_USER}
@@ -91,7 +94,7 @@ services:
     environment:
       - CHOKIDAR_USEPULLING=true
 ```
-sample.docker-compose.yml
+sample.docker-compose.dev.yml
 
 ## 300 - Generate a new app
 
