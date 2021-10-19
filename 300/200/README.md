@@ -132,5 +132,21 @@ What’s happening here?
 
 5. Finally, environment: - CHOKIDAR_USEPOLLING=true enables a polling mechanism via chokidar (which wraps fs.watch, fs.watchFile, and fsevents) so that hot-reloading will work.
 
+Take note of the volumes. Without the anonymous volume ('/app/node_modules'), the node_modules directory would be overwritten by the mounting of the host directory at runtime. In other words, this would happen:
+
+- Build - The node_modules directory is created in the image.
+- Run - The current directory is mounted into the container, overwriting the node_modules that were installed during the build.
+
+Hot-reloading
+
+Test hot-relaoding by making a change to containers/app/webui/src/App.js and watch how the browser reloads to show the change automatically.
+
+Bring down the container before moving on:
+
+```
+$ docker-compose stop
+```
+
+
 
 == WE ARE HERE ==
