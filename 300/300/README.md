@@ -97,6 +97,3 @@ If successful, browse to http://localhost (***note***: 80 is the default port fo
 ![Screenshot 2021-10-19 at 16 00 17](https://user-images.githubusercontent.com/1499433/137925862-44eb5dee-8224-4811-89d7-ae9396659bdd.png)
 
 http://localhost
-
-
-== WE ARE HERE ==
