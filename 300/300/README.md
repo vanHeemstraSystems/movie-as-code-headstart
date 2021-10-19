@@ -77,4 +77,14 @@ Here, we take advantage of the [multistage build](https://docs.docker.com/engine
 
 NOTE: Check out the [Builder pattern vs. Multi-stage builds in Docker](https://blog.alexellis.io/mutli-stage-docker-builds/) blog post for more info on multistage builds.
 
+Using the production docker-compose file, build and tag the Docker image and run the Docker container:
+
+```
+$ cd containers/app
+$ docker-compose --file docker-compose.prod.yml up --build -d
+```
+
+
+
+
 == WE ARE HERE ==
