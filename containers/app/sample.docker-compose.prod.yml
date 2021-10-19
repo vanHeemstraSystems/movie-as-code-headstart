@@ -1,0 +1,11 @@
+version: "3.7"
+
+# See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
+services:
+  webui:
+    build:
+      context: ./webui
+      container_name: app-prod
+      dockerfile: Dockerfile.prod
+    ports:
+      - "80:1337"
