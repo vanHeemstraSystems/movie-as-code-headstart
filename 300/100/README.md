@@ -83,7 +83,13 @@ services:
     env_file:
       - .env
     ports:
-    - "80:80"
+      - "80:3000"
+    volumes:
+      - ${PWD}:/app
+      - /app/node_modules
+      - /app/package.json
+    environment:
+      - CHOKIDAR_USEPULLING=true
 ```
 sample.docker-compose.yml
 
