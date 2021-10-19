@@ -89,7 +89,8 @@ $ docker-compose version
 Make sure Docker daemon is up and running:
 
 ```
-???
+sudo systemctl start docker
+sudo service docker start
 ```
 
 Build and tag the Docker image:
