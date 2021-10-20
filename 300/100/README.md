@@ -55,7 +55,7 @@ PROXY_PASSWORD=my-proxy-password
 PROXY_FQDN=my-proxy.my-company.com
 PROXY_PORT=8080
 ```
-sample.env
+containers/app/sample.env
 
 Inside the app directory create a ***sample.docker-compose.dev.yml*** file.
 
