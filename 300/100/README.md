@@ -89,7 +89,7 @@ services:
     ports:
       - "8080:3000"
     volumes:
-      - ${PWD}:/app
+      - ./webui:/app
       - /app/node_modules
     environment:
       - CHOKIDAR_USEPULLING=true
