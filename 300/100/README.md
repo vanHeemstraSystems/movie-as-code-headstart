@@ -142,5 +142,3 @@ Take care of the reported vulnerabilities by running the following command from 
 $ cd webui
 $ npm audit fix
 ```
-
-
