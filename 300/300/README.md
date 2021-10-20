@@ -9,7 +9,7 @@ version: "3.7"
 services:
   webui:
     build:
-      context: ./web
+      context: ./webui
       dockerfile: Dockerfile.prod
       args: # from env_file
         IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
