@@ -64,14 +64,14 @@ $ cd containers/app/webui
 $ mkdir nginx
 ```
 
-Inside the newly created subdirectory for nginx configuration, create a file called ***nginx.conf***:
+Inside the newly created subdirectory for nginx configuration, create a file called ***sample.nginx.conf***:
 
 ```
 $ cd containers/app/webui/nginx
-$ touch nginx.conf
+$ touch sample.nginx.conf
 ```
 
-Add the following content to ***nginx.conf***:
+Add the following content to ***sample.nginx.conf***:
 
 ```
 server {
@@ -92,4 +92,11 @@ server {
 
 }
 ```
-containers/app/webui/nginx/nginx.conf
+containers/app/webui/nginx/sample.nginx.conf
+
+Copy ***sample.nginx.conf***:
+
+```
+$ cd containers/app/webui/nginx
+$ cp sample.nginx.conf nginx.conf
+```
