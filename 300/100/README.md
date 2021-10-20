@@ -94,7 +94,7 @@ services:
     environment:
       - CHOKIDAR_USEPULLING=true
 ```
-sample.docker-compose.dev.yml
+containers/app/sample.docker-compose.dev.yml
 
 ## 300 - Generate a new app
 
