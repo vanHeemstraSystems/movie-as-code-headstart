@@ -2,3 +2,4 @@ node_modules
 /containers/app/docker-compose.dev.yml
 /containers/app/docker-compose.prod.yml
 /containers/app/.env
+.DS_Store
