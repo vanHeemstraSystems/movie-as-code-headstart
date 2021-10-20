@@ -91,7 +91,6 @@ services:
     volumes:
       - ${PWD}:/app
       - /app/node_modules
-      - /app/package.json
     environment:
       - CHOKIDAR_USEPULLING=true
 ```
