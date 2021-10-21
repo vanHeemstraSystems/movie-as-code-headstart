@@ -19,7 +19,7 @@ services:
         PROXY_PORT: ${PROXY_PORT}
     env_file:
       - .env      
-    container_name: app-prod  
+    container_name: webui-prod  
     ports:
       - "80:80"
 ```
