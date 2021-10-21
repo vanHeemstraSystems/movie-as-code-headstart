@@ -85,7 +85,7 @@ services:
         PROXY_PORT: ${PROXY_PORT}
     env_file:
       - .env
-    container-name: app-dev  
+    container-name: webui-dev  
     ports:
       - "8080:3000"
     volumes:
