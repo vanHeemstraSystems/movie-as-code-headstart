@@ -85,11 +85,17 @@ Here, we take advantage of the [multistage build](https://docs.docker.com/engine
 
 NOTE: Check out the [Builder pattern vs. Multi-stage builds in Docker](https://blog.alexellis.io/mutli-stage-docker-builds/) blog post for more info on multistage builds.
 
-Using the production docker-compose file, build and tag the Docker image and run the Docker container:
+Using the production docker-compose file, build and tag the Docker image, and run the container specifying its name as "movie-as-code-prod" to distinguish it from possible other stacks that are called "app" (the default name, based on the root directory)::
 
 ```
 $ cd containers/app
-$ docker-compose --file docker-compose.prod.yml up --build -d
+$ docker-compose --file docker-compose.prod.yml --project-name movie-as-code-prod up --build -d
+```
+
+**Note**:   
+```
+-p, --project-name NAME     Specify an alternate project name
+                              (default: directory name)
 ```
 
 If successful, browse to http://localhost (***note***: 80 is the default port for HTTP, and therefore not required to be added to the hostname) to see the production version of the app.
