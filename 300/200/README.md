@@ -114,12 +114,18 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-Build and tag the Docker image:
+Build and tag the Docker image, and run the container specifying its name as "movie-as-code-dev" to distinguish it from possible other stacks that are called "app" (the default name, based on the root directory):
 
 ```
 $ cd containers/app
-$ docker-compose --file docker-compose.dev.yml up --build -d
+$ docker-compose --file docker-compose.dev.yml --project-name movie-as-code-dev up --build -d
 ```
+
+**Note**:   
+```
+-p, --project-name NAME     Specify an alternate project name
+                              (default: directory name)
+```                              
 
 If successful, you can browse to the start page of the new React App, which will look like below:
 
