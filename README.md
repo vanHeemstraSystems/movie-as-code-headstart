@@ -21,6 +21,8 @@ Resources:
 
 <a href='https://www.freepik.com/vectors/star'>Star vector created by upklyak - www.freepik.com</a>
 
+Try to integrate this with "Remotion - Headstart" at https://github.com/vanHeemstraSystems/remotion-headstart/blob/main/README.md
+
 ## 100 - Introduction
 
 See [README.md](./100/README.md)
