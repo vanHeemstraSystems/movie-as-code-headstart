@@ -23,6 +23,10 @@ Resources:
 
 Try to integrate this with "Remotion - Headstart" at https://github.com/vanHeemstraSystems/remotion-headstart/blob/main/README.md
 
+See also [Movie-as-Code GUI - Headstart](https://github.com/vanHeemstraSystems/movie-as-code-gui-headstart/blob/main/README.md)
+
+See also [Movie-as-Code CMS - Headstart](https://github.com/vanHeemstraSystems/movie-as-code-cms-headstart/blob/main/README.md)
+
 ## 100 - Introduction
 
 See [README.md](./100/README.md)
